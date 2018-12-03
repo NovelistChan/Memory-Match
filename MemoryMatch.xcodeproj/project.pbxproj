@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3548221C21B4194F00795595 /* TwoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3548221B21B4194F00795595 /* TwoPlayerViewController.swift */; };
+		3566A2F021B2D9DB00166C7B /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3566A2EF21B2D9DB00166C7B /* RecordListViewController.swift */; };
+		356E972221B252A7001B60D3 /* back的副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 356E972121B252A7001B60D3 /* back的副本.png */; };
+		356E972821B26281001B60D3 /* GameClassic1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E972721B26281001B60D3 /* GameClassic1ViewController.swift */; };
+		35825B0F21B2B1CA00FCCFAD /* blank的副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 35825B0E21B2B1C900FCCFAD /* blank的副本.png */; };
 		35C8E9EB21A291CC00B0E604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8E9EA21A291CC00B0E604 /* AppDelegate.swift */; };
 		35C8E9ED21A291CC00B0E604 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8E9EC21A291CC00B0E604 /* ViewController.swift */; };
 		35C8E9F021A291CC00B0E604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C8E9EE21A291CC00B0E604 /* Main.storyboard */; };
@@ -52,6 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3548221B21B4194F00795595 /* TwoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPlayerViewController.swift; sourceTree = "<group>"; };
+		3566A2EF21B2D9DB00166C7B /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
+		356E972121B252A7001B60D3 /* back的副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back的副本.png"; sourceTree = SOURCE_ROOT; };
+		356E972721B26281001B60D3 /* GameClassic1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClassic1ViewController.swift; sourceTree = "<group>"; };
+		35825B0E21B2B1C900FCCFAD /* blank的副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank的副本.png"; sourceTree = SOURCE_ROOT; };
 		35C8E9E721A291CC00B0E604 /* MemoryMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C8E9EA21A291CC00B0E604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35C8E9EC21A291CC00B0E604 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,8 +145,13 @@
 			children = (
 				35C8E9EA21A291CC00B0E604 /* AppDelegate.swift */,
 				35C8E9EC21A291CC00B0E604 /* ViewController.swift */,
+				356E972721B26281001B60D3 /* GameClassic1ViewController.swift */,
+				3566A2EF21B2D9DB00166C7B /* RecordListViewController.swift */,
+				3548221B21B4194F00795595 /* TwoPlayerViewController.swift */,
 				35C8E9EE21A291CC00B0E604 /* Main.storyboard */,
 				35C8E9F121A291D000B0E604 /* Assets.xcassets */,
+				35825B0E21B2B1C900FCCFAD /* blank的副本.png */,
+				356E972121B252A7001B60D3 /* back的副本.png */,
 				35C8EA4C21A2DAF800B0E604 /* backdrop1的副本.jpg */,
 				35C8EA4921A2DAF700B0E604 /* backdrop2的副本.jpg */,
 				35C8EA4821A2DAF600B0E604 /* backdrop3的副本.jpg */,
@@ -291,11 +306,13 @@
 				35C8EA5C21A2DAFB00B0E604 /* icons02的副本.png in Resources */,
 				35C8EA5F21A2DAFB00B0E604 /* icons08的副本.png in Resources */,
 				35C8EA5D21A2DAFB00B0E604 /* icons07的副本.png in Resources */,
+				356E972221B252A7001B60D3 /* back的副本.png in Resources */,
 				35C8E9F521A291D000B0E604 /* LaunchScreen.storyboard in Resources */,
 				35C8E9F221A291D000B0E604 /* Assets.xcassets in Resources */,
 				35C8EA5421A2DAFB00B0E604 /* icons12的副本.png in Resources */,
 				35C8E9F021A291CC00B0E604 /* Main.storyboard in Resources */,
 				35C8EA5321A2DAFB00B0E604 /* icons09的副本.png in Resources */,
+				35825B0F21B2B1CA00FCCFAD /* blank的副本.png in Resources */,
 				35C8EA5A21A2DAFB00B0E604 /* backdrop3的副本.jpg in Resources */,
 				35C8EA5B21A2DAFB00B0E604 /* backdrop2的副本.jpg in Resources */,
 				35C8EA6021A2DAFB00B0E604 /* icons10的副本.png in Resources */,
@@ -328,8 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3548221C21B4194F00795595 /* TwoPlayerViewController.swift in Sources */,
+				356E972821B26281001B60D3 /* GameClassic1ViewController.swift in Sources */,
 				35C8E9ED21A291CC00B0E604 /* ViewController.swift in Sources */,
 				35C8E9EB21A291CC00B0E604 /* AppDelegate.swift in Sources */,
+				3566A2F021B2D9DB00166C7B /* RecordListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
