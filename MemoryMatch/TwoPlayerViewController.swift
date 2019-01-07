@@ -50,8 +50,16 @@ class TwoPlayerViewController: UIViewController {
     var matchCounter2:Int = 0
 //    var guessCounter2:Int = 0
 //    var matchCounterWin:Int = 0
+    //清除时卡牌变为透明
     var blankTileImage:UIImage = UIImage(named: "blank的副本.png")!
+    //原本卡牌背面图
     var backTileImage:UIImage = UIImage(named: "back的副本.png")!
+    //奖励分牌：黑色星星
+    var bonusTileImage:UIImage = UIImage(named: "icons03的副本.png")!
+    //奖励分牌：白色星星
+    var superbonusTileImage:UIImage = UIImage(named: "icons04的f副本.png")!
+    //惩罚牌：黑色x
+    var punishTileImage:UIImage = UIImage(named: "icons08的副本.png")!
     var isDisabled:Bool = false
     var tileFlipped:Int = -1
     var tile1:UIButton = UIButton()

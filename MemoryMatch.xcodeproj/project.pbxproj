@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3548221C21B4194F00795595 /* TwoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3548221B21B4194F00795595 /* TwoPlayerViewController.swift */; };
+		355A11E821E38B9200B9AF52 /* background1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 355A11E721E3899600B9AF52 /* background1.mp3 */; };
 		3566A2F021B2D9DB00166C7B /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3566A2EF21B2D9DB00166C7B /* RecordListViewController.swift */; };
 		356E972221B252A7001B60D3 /* back的副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 356E972121B252A7001B60D3 /* back的副本.png */; };
 		356E972821B26281001B60D3 /* GameClassic1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E972721B26281001B60D3 /* GameClassic1ViewController.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		3548221B21B4194F00795595 /* TwoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPlayerViewController.swift; sourceTree = "<group>"; };
+		355A11E721E3899600B9AF52 /* background1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = background1.mp3; path = "/Users/czf/Desktop/Memory-Match/MemoryMatch/background1.mp3"; sourceTree = "<absolute>"; };
 		3566A2EF21B2D9DB00166C7B /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
 		356E972121B252A7001B60D3 /* back的副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back的副本.png"; sourceTree = SOURCE_ROOT; };
 		356E972721B26281001B60D3 /* GameClassic1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClassic1ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				3548221B21B4194F00795595 /* TwoPlayerViewController.swift */,
 				35C8E9EE21A291CC00B0E604 /* Main.storyboard */,
 				35C8E9F121A291D000B0E604 /* Assets.xcassets */,
+				355A11E721E3899600B9AF52 /* background1.mp3 */,
 				35825B0E21B2B1C900FCCFAD /* blank的副本.png */,
 				356E972121B252A7001B60D3 /* back的副本.png */,
 				35C8EA4C21A2DAF800B0E604 /* backdrop1的副本.jpg */,
@@ -298,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355A11E821E38B9200B9AF52 /* background1.mp3 in Resources */,
 				35C8EA5621A2DAFB00B0E604 /* icons14的副本.png in Resources */,
 				35C8EA5821A2DAFB00B0E604 /* icons15的副本.png in Resources */,
 				35C8EA5E21A2DAFB00B0E604 /* backdrop1的副本.jpg in Resources */,
