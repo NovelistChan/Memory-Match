@@ -15,7 +15,7 @@ class Level1ViewController: UIViewController {
     var lose:Bool = false
     var timer = Timer()
     var timerEnable:Bool = false
-    var timerCnt = 60
+    var timerCnt = 50
     var matchCounter:Int = 0
     var guessCounter:Int = 0
     var blankTileImage:UIImage = UIImage(named: "blank的副本.png")!
@@ -71,14 +71,14 @@ class Level1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gameTimeLeft.text = "Time Left : 60s"
+        gameTimeLeft.text = "Time Left : 50s"
         self.lose = false
         self.shuffleTiles()
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let alert = UIAlertController(title: "开始第一关", message: "翻转并消除16张卡牌，你有60秒的时间！", preferredStyle: .alert)
+        let alert = UIAlertController(title: "开始第一关", message: "翻转并消除16张卡牌，你有50秒的时间！", preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "确定", style: .default, handler: nil)
         
