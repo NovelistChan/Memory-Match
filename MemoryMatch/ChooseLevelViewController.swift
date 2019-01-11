@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 //是否触发条件使得隐藏关可见
-var isDisplayLevel0:Bool = true
+var isDisplayLevel0:Bool = false
 
 //是否通过之前的关卡，使得可以进入下一关
 var isEnablelevel2:Bool = false

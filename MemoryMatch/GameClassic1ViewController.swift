@@ -199,11 +199,19 @@ class GameClassic1ViewController: UIViewController {
     func winner() {
         self.gameScoreLabel.text = "You won with \(self.guessCounter) Guesses!"
         //create alert dialog
+        let date = NSDate()
+        
+        let timeFormatter = DateFormatter()
+        
+        timeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        let strNowTime = timeFormatter.string(from: date as Date) as String
+        print(strNowTime)
         let alert = UIAlertController(title: "游戏已完成", message: "是否保存", preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
         let okAction = UIAlertAction(title: "确定", style: .default, handler: {
             action in
-            score.add(self.gameScoreLabel.text!)
+            score.add("\(self.guessCounter)guesses " + strNowTime)
         })
         alert.addAction(cancelAction)
         alert.addAction(okAction)

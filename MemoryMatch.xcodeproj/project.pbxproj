@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187D06BC21E8511100193A20 /* background1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 187D06BB21E8511100193A20 /* background1.mp3 */; };
 		3548221C21B4194F00795595 /* TwoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3548221B21B4194F00795595 /* TwoPlayerViewController.swift */; };
-		355A11E821E38B9200B9AF52 /* background1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 355A11E721E3899600B9AF52 /* background1.mp3 */; };
 		3566A2F021B2D9DB00166C7B /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3566A2EF21B2D9DB00166C7B /* RecordListViewController.swift */; };
 		356E972221B252A7001B60D3 /* back的副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 356E972121B252A7001B60D3 /* back的副本.png */; };
 		356E972821B26281001B60D3 /* GameClassic1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E972721B26281001B60D3 /* GameClassic1ViewController.swift */; };
@@ -70,8 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187D06BB21E8511100193A20 /* background1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background1.mp3; sourceTree = "<group>"; };
 		3548221B21B4194F00795595 /* TwoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPlayerViewController.swift; sourceTree = "<group>"; };
-		355A11E721E3899600B9AF52 /* background1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = background1.mp3; path = "/Users/czf/Desktop/Memory-Match/MemoryMatch/background1.mp3"; sourceTree = "<absolute>"; };
 		3566A2EF21B2D9DB00166C7B /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
 		356E972121B252A7001B60D3 /* back的副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back的副本.png"; sourceTree = SOURCE_ROOT; };
 		356E972721B26281001B60D3 /* GameClassic1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClassic1ViewController.swift; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 				35D91BCB21E76869000505A4 /* Level0ViewController.swift */,
 				35C8E9EE21A291CC00B0E604 /* Main.storyboard */,
 				35C8E9F121A291D000B0E604 /* Assets.xcassets */,
-				355A11E721E3899600B9AF52 /* background1.mp3 */,
+				187D06BB21E8511100193A20 /* background1.mp3 */,
 				35D91BB521E70CD0000505A4 /* background2.mp3 */,
 				35D91BB721E71010000505A4 /* background3.mp3 */,
 				35D91BB921E71297000505A4 /* background4.mp3 */,
@@ -337,7 +337,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				355A11E821E38B9200B9AF52 /* background1.mp3 in Resources */,
 				35D91BBA21E71298000505A4 /* background4.mp3 in Resources */,
 				35C8EA5621A2DAFB00B0E604 /* icons14的副本.png in Resources */,
 				35D91BB821E71010000505A4 /* background3.mp3 in Resources */,
@@ -361,6 +360,7 @@
 				35C8EA5A21A2DAFB00B0E604 /* backdrop3的副本.jpg in Resources */,
 				35C8EA5B21A2DAFB00B0E604 /* backdrop2的副本.jpg in Resources */,
 				35C8EA6021A2DAFB00B0E604 /* icons10的副本.png in Resources */,
+				187D06BC21E8511100193A20 /* background1.mp3 in Resources */,
 				35C8EA6321A2DAFB00B0E604 /* icons03的副本.png in Resources */,
 				35C8EA5721A2DAFB00B0E604 /* icons11的副本.png in Resources */,
 				35C8EA6221A2DAFB00B0E604 /* icons13的副本.png in Resources */,
@@ -577,6 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYQV5R45SX;
 				INFOPLIST_FILE = MemoryMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -594,6 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYQV5R45SX;
 				INFOPLIST_FILE = MemoryMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
