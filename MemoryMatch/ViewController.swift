@@ -9,10 +9,12 @@
 import UIKit
 import AVFoundation
 
+var audioPlayer = AVAudioPlayer()
+
 class ViewController: UIViewController {
 
     //var ButtonSound = NSURL(fileURLWithPath: Bundle.mainBundle.pathForResource("tamborine", ofType: "wav")!)
-    var audioPlayer = AVAudioPlayer()
+    //var audioPlayer = AVAudioPlayer()
     
     /* var Bgm = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Waiting-in-the-Woods", ofType: "mp3")!), error: nil) */
     
@@ -27,7 +29,7 @@ class ViewController: UIViewController {
         
         audioPlayer.numberOfLoops = -1
         //-1為循環播放
-        audioPlayer.volume = 10
+        audioPlayer.volume = 5
         audioPlayer.prepareToPlay()
         audioPlayer.play()
         
@@ -51,4 +53,3 @@ class ViewController: UIViewController {
         }
     }
 }
-

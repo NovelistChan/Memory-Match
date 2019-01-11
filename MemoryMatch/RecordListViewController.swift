@@ -7,14 +7,44 @@
 //
 
 import UIKit
+import AVFoundation
 
 class RecordListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    func playBgMusic(){
+        let musicPath = Bundle.main.path(forResource: "background4.mp3", ofType: nil)
+        let url = URL(fileURLWithPath: musicPath!)
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOf: url as URL)
+        }catch{
+            print(error)
+        }
+        
+        audioPlayer.numberOfLoops = -1
+        //-1為循環播放
+        audioPlayer.volume = 5
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        playBgMusic()
+        if !audioPlayer.isPlaying {
+            audioPlayer.play()
+        }
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        playBgMusic()
+        if !audioPlayer.isPlaying {
+            audioPlayer.play()
+        }
         // Do any additional setup after loading the view.
     }
     

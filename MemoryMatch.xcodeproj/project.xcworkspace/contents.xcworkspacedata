@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/czf/Desktop/Memory-Match/MemoryMatch/background1.mp3">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

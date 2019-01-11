@@ -1,19 +1,21 @@
 //
-//  GameClassic1ViewController.swift
+//  Level1ViewController.swift
 //  MemoryMatch
 //
-//  Created by czf on 2018/11/30.
-//  Copyright © 2018年 czf. All rights reserved.
+//  Created by czf on 2019/1/9.
+//  Copyright © 2019年 czf. All rights reserved.
 //
 
 import UIKit
-import AVFoundation
 
-var score:NSMutableArray = NSMutableArray()
+class Level1ViewController: UIViewController {
 
-class GameClassic1ViewController: UIViewController {
-
-    @IBOutlet weak var gameScoreLabel: UILabel!
+    @IBOutlet weak var gameTimeLeft: UILabel!
+    var startGame:Bool = false
+    var lose:Bool = false
+    var timer = Timer()
+    var timerEnable:Bool = false
+    var timerCnt = 60
     var matchCounter:Int = 0
     var guessCounter:Int = 0
     var blankTileImage:UIImage = UIImage(named: "blank的副本.png")!
@@ -23,8 +25,6 @@ class GameClassic1ViewController: UIViewController {
     var tile1:UIButton = UIButton()
     var tile2:UIButton = UIButton()
     var isMatch:Bool = false
-    //var timer1 = Timer()
-    //var whyNotFlipCnt:Int = 0
     
     var tiles:NSMutableArray = NSMutableArray(objects:
         UIImage(named: "icons01的副本.png") as Any,
@@ -35,13 +35,7 @@ class GameClassic1ViewController: UIViewController {
         UIImage(named: "icons06的副本.png") as Any,
         UIImage(named: "icons07的副本.png") as Any,
         UIImage(named: "icons08的副本.png") as Any,
-        UIImage(named: "icons09的副本.png") as Any,
-        UIImage(named: "icons10的副本.png") as Any,
-        UIImage(named: "icons11的副本.png") as Any,
-        UIImage(named: "icons12的副本.png") as Any,
-        UIImage(named: "icons13的副本.png") as Any,
-        UIImage(named: "icons14的副本.png") as Any,
-        UIImage(named: "icons15的副本.png") as Any,
+
         UIImage(named: "icons01的副本.png") as Any,
         UIImage(named: "icons02的副本.png") as Any,
         UIImage(named: "icons03的副本.png") as Any,
@@ -49,40 +43,17 @@ class GameClassic1ViewController: UIViewController {
         UIImage(named: "icons05的副本.png") as Any,
         UIImage(named: "icons06的副本.png") as Any,
         UIImage(named: "icons07的副本.png") as Any,
-        UIImage(named: "icons08的副本.png") as Any,
-        UIImage(named: "icons09的副本.png") as Any,
-        UIImage(named: "icons10的副本.png") as Any,
-        UIImage(named: "icons11的副本.png") as Any,
-        UIImage(named: "icons12的副本.png") as Any,
-        UIImage(named: "icons13的副本.png") as Any,
-        UIImage(named: "icons14的副本.png") as Any,
-        UIImage(named: "icons15的副本.png") as Any
+        UIImage(named: "icons08的副本.png") as Any
     )
     
     var shuffledTiles:NSMutableArray = NSMutableArray()
-    
-    func playBgMusic(){
-        let musicPath = Bundle.main.path(forResource: "background3.mp3", ofType: nil)
-        let url = URL(fileURLWithPath: musicPath!)
-        do {
-            try audioPlayer = AVAudioPlayer(contentsOf: url as URL)
-        }catch{
-            print(error)
-        }
-        
-        audioPlayer.numberOfLoops = -1
-        //-1為循環播放
-        audioPlayer.volume = 5
-        audioPlayer.prepareToPlay()
-        audioPlayer.play()
-    }
     
     func shuffleTiles() {
         var tileCount:Int = tiles.count
         //var tileID:Int = 0
         for i in 0 ..< (tileCount / 2) {
-          self.shuffledTiles.add(Int32(i))
-          self.shuffledTiles.add(Int32(i))
+            self.shuffledTiles.add(Int32(i))
+            self.shuffledTiles.add(Int32(i))
         }
         for j in 0 ..< UInt32(tileCount) {
             //let index = j
@@ -100,36 +71,52 @@ class GameClassic1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playBgMusic()
-        if !audioPlayer.isPlaying {
-            audioPlayer.play()
-        }
-        gameScoreLabel.text = "Matches: \(self.matchCounter), Guess:\(self.guessCounter)"
+        gameTimeLeft.text = "Time Left : 60s"
+        self.lose = false
         self.shuffleTiles()
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-        playBgMusic()
-        if !audioPlayer.isPlaying {
-            audioPlayer.play()
-        }
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
-        let alert = UIAlertController(title: "单人挑战模式", message: "在本模式中，不设置时间限制，玩家尽可能地通过更少的错误次数来配对所有卡牌，成功后可以保存历史记录", preferredStyle: .alert)
+        let alert = UIAlertController(title: "开始第一关", message: "翻转并消除16张卡牌，你有60秒的时间！", preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "确定", style: .default, handler: nil)
         
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
+        if !timerEnable {
+            timerEnable = true
+            timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(1), repeats: true, block: {(timer: Timer) -> Void in
+                self.timerCnt = self.timerCnt - 1
+                self.gameTimeLeft.text = "Time left : \(self.timerCnt)s"
+                if self.timerCnt == 0 {
+                    self.loser()
+                }
+            })
+        }
     }
     
-    @IBAction func titleClicked0(_ sender: UIButton) {
-        if isDisabled == true {
+    func loser() {
+        timerEnable = false
+        timer.invalidate()
+        let alert = UIAlertController(title: "你失败了", message: "时间已被用完，闯关失败", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "确定", style: .default, handler: nil)
+        self.lose = true
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func tileClicked(_ sender: UIButton) {
+        if lose {//失败，不能进行操作了
             return
         }
+        if !startGame {
+            startGame = true
+        }
+        if isDisabled {
+            return
+        }
+        
         var senderID:Int = sender.tag
         if self.tileFlipped >= 0 && senderID != self.tileFlipped {
             //flip the second card
@@ -163,23 +150,7 @@ class GameClassic1ViewController: UIViewController {
                 }
                 
             }
-           /* Timer.scheduledTimer(withTimeInterval: TimeInterval(1), repeats: false, block: {(timer: Timer) -> Void in
-                if self.isMatch == true {
-                    self.tile1.setImage(self.blankTileImage, for: .normal)
-                    self.tile2.setImage(self.blankTileImage, for: .normal)
-                    //self.isMatch = false
-                }else if self.isMatch == false {
-                    self.tile1.setImage(self.backTileImage, for: .normal)
-                    self.tile2.setImage(self.backTileImage, for: .normal)
-                }
-                self.isMatch = false
-                self.isDisabled = false
-                if(self.matchCounter == (self.tiles.count / 2)) {
-                    self.winner()
-                }
-            })*/
-            //self.whyNotFlip()
-            //timer1.invalidate()
+            
             self.tileFlipped = -1 //no card flipped
         }else {
             //flip the first card
@@ -188,28 +159,20 @@ class GameClassic1ViewController: UIViewController {
             var tileImage:UIImage = self.tiles.object(at: senderID) as! UIImage
             sender.setImage(tileImage, for: .normal)
         }
-        gameScoreLabel.text = "Matches: \(self.matchCounter), Guess:\(self.guessCounter)"
         
     }
     
-  //  func whyNotFlip() {
-  //      self.whyNotFlipCnt = self.whyNotFlipCnt + 1
-  //  }
-    
     func winner() {
-        self.gameScoreLabel.text = "You won with \(self.guessCounter) Guesses!"
-        //create alert dialog
-        let alert = UIAlertController(title: "游戏已完成", message: "是否保存", preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
-        let okAction = UIAlertAction(title: "确定", style: .default, handler: {
-            action in
-            score.add(self.gameScoreLabel.text!)
-        })
-        alert.addAction(cancelAction)
+        timer.invalidate()
+        timerEnable = false
+        self.gameTimeLeft.text = "You passed level 1!"
+        isEnablelevel2 = true
+        let alert = UIAlertController(title: "游戏胜利", message: "level 2 已解锁", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "确定", style: .default, handler: nil)
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
-
+    
     /*
     // MARK: - Navigation
 
