@@ -13,6 +13,19 @@
 		356E972221B252A7001B60D3 /* back的副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 356E972121B252A7001B60D3 /* back的副本.png */; };
 		356E972821B26281001B60D3 /* GameClassic1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356E972721B26281001B60D3 /* GameClassic1ViewController.swift */; };
 		35825B0F21B2B1CA00FCCFAD /* blank的副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 35825B0E21B2B1C900FCCFAD /* blank的副本.png */; };
+		35B13C6721F03AD400A2D101 /* icon_58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C5B21F03AD000A2D101 /* icon_58x58.png */; };
+		35B13C6821F03AD400A2D101 /* icon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C5C21F03AD100A2D101 /* icon_120x120.png */; };
+		35B13C6921F03AD400A2D101 /* icon_152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C5D21F03AD100A2D101 /* icon_152x152.png */; };
+		35B13C6A21F03AD400A2D101 /* icon_29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C5E21F03AD100A2D101 /* icon_29x29.png */; };
+		35B13C6B21F03AD400A2D101 /* icon_167x167.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C5F21F03AD200A2D101 /* icon_167x167.png */; };
+		35B13C6C21F03AD400A2D101 /* icon_76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C6021F03AD200A2D101 /* icon_76x76.png */; };
+		35B13C6D21F03AD400A2D101 /* icon_60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C6121F03AD200A2D101 /* icon_60x60.png */; };
+		35B13C6E21F03AD400A2D101 /* icon_87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C6221F03AD300A2D101 /* icon_87x87.png */; };
+		35B13C6F21F03AD400A2D101 /* icon_20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C6321F03AD300A2D101 /* icon_20x20.png */; };
+		35B13C7021F03AD400A2D101 /* icon_40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C6421F03AD300A2D101 /* icon_40x40.png */; };
+		35B13C7121F03AD400A2D101 /* icon_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C6521F03AD400A2D101 /* icon_80x80.png */; };
+		35B13C7221F03AD400A2D101 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C6621F03AD400A2D101 /* icon_1024x1024.png */; };
+		35B13C7421F03BA200A2D101 /* icon_180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B13C7321F03BA100A2D101 /* icon_180x180.png */; };
 		35C8E9EB21A291CC00B0E604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8E9EA21A291CC00B0E604 /* AppDelegate.swift */; };
 		35C8E9ED21A291CC00B0E604 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8E9EC21A291CC00B0E604 /* ViewController.swift */; };
 		35C8E9F021A291CC00B0E604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C8E9EE21A291CC00B0E604 /* Main.storyboard */; };
@@ -76,6 +89,19 @@
 		356E972121B252A7001B60D3 /* back的副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back的副本.png"; sourceTree = SOURCE_ROOT; };
 		356E972721B26281001B60D3 /* GameClassic1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameClassic1ViewController.swift; sourceTree = "<group>"; };
 		35825B0E21B2B1C900FCCFAD /* blank的副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank的副本.png"; sourceTree = SOURCE_ROOT; };
+		35B13C5B21F03AD000A2D101 /* icon_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_58x58.png; sourceTree = SOURCE_ROOT; };
+		35B13C5C21F03AD100A2D101 /* icon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_120x120.png; sourceTree = SOURCE_ROOT; };
+		35B13C5D21F03AD100A2D101 /* icon_152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_152x152.png; sourceTree = SOURCE_ROOT; };
+		35B13C5E21F03AD100A2D101 /* icon_29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_29x29.png; sourceTree = SOURCE_ROOT; };
+		35B13C5F21F03AD200A2D101 /* icon_167x167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_167x167.png; sourceTree = SOURCE_ROOT; };
+		35B13C6021F03AD200A2D101 /* icon_76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_76x76.png; sourceTree = SOURCE_ROOT; };
+		35B13C6121F03AD200A2D101 /* icon_60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_60x60.png; sourceTree = SOURCE_ROOT; };
+		35B13C6221F03AD300A2D101 /* icon_87x87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_87x87.png; sourceTree = SOURCE_ROOT; };
+		35B13C6321F03AD300A2D101 /* icon_20x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_20x20.png; sourceTree = SOURCE_ROOT; };
+		35B13C6421F03AD300A2D101 /* icon_40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40x40.png; sourceTree = SOURCE_ROOT; };
+		35B13C6521F03AD400A2D101 /* icon_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_80x80.png; sourceTree = SOURCE_ROOT; };
+		35B13C6621F03AD400A2D101 /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = SOURCE_ROOT; };
+		35B13C7321F03BA100A2D101 /* icon_180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_180x180.png; sourceTree = SOURCE_ROOT; };
 		35C8E9E721A291CC00B0E604 /* MemoryMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C8E9EA21A291CC00B0E604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35C8E9EC21A291CC00B0E604 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +209,19 @@
 				35D91BCB21E76869000505A4 /* Level0ViewController.swift */,
 				35C8E9EE21A291CC00B0E604 /* Main.storyboard */,
 				35C8E9F121A291D000B0E604 /* Assets.xcassets */,
+				35B13C7321F03BA100A2D101 /* icon_180x180.png */,
+				35B13C6321F03AD300A2D101 /* icon_20x20.png */,
+				35B13C5E21F03AD100A2D101 /* icon_29x29.png */,
+				35B13C6421F03AD300A2D101 /* icon_40x40.png */,
+				35B13C5B21F03AD000A2D101 /* icon_58x58.png */,
+				35B13C6121F03AD200A2D101 /* icon_60x60.png */,
+				35B13C6021F03AD200A2D101 /* icon_76x76.png */,
+				35B13C6521F03AD400A2D101 /* icon_80x80.png */,
+				35B13C6221F03AD300A2D101 /* icon_87x87.png */,
+				35B13C5C21F03AD100A2D101 /* icon_120x120.png */,
+				35B13C5D21F03AD100A2D101 /* icon_152x152.png */,
+				35B13C5F21F03AD200A2D101 /* icon_167x167.png */,
+				35B13C6621F03AD400A2D101 /* icon_1024x1024.png */,
 				187D06BB21E8511100193A20 /* background1.mp3 */,
 				35D91BB521E70CD0000505A4 /* background2.mp3 */,
 				35D91BB721E71010000505A4 /* background3.mp3 */,
@@ -337,29 +376,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B13C6821F03AD400A2D101 /* icon_120x120.png in Resources */,
+				35B13C7121F03AD400A2D101 /* icon_80x80.png in Resources */,
 				35D91BBA21E71298000505A4 /* background4.mp3 in Resources */,
+				35B13C6C21F03AD400A2D101 /* icon_76x76.png in Resources */,
 				35C8EA5621A2DAFB00B0E604 /* icons14的副本.png in Resources */,
+				35B13C7421F03BA200A2D101 /* icon_180x180.png in Resources */,
 				35D91BB821E71010000505A4 /* background3.mp3 in Resources */,
 				35D91BB621E70CD1000505A4 /* background2.mp3 in Resources */,
 				35C8EA5821A2DAFB00B0E604 /* icons15的副本.png in Resources */,
+				35B13C7221F03AD400A2D101 /* icon_1024x1024.png in Resources */,
 				35C8EA5E21A2DAFB00B0E604 /* backdrop1的副本.jpg in Resources */,
 				35C8EA6121A2DAFB00B0E604 /* icons06的副本.png in Resources */,
+				35B13C6F21F03AD400A2D101 /* icon_20x20.png in Resources */,
 				35C8EA5921A2DAFB00B0E604 /* icons01的副本.png in Resources */,
 				35C8EA5C21A2DAFB00B0E604 /* icons02的副本.png in Resources */,
 				35C8EA5F21A2DAFB00B0E604 /* icons08的副本.png in Resources */,
 				35C8EA5D21A2DAFB00B0E604 /* icons07的副本.png in Resources */,
 				356E972221B252A7001B60D3 /* back的副本.png in Resources */,
+				35B13C6B21F03AD400A2D101 /* icon_167x167.png in Resources */,
+				35B13C6E21F03AD400A2D101 /* icon_87x87.png in Resources */,
 				35C8E9F521A291D000B0E604 /* LaunchScreen.storyboard in Resources */,
+				35B13C6721F03AD400A2D101 /* icon_58x58.png in Resources */,
 				35C8E9F221A291D000B0E604 /* Assets.xcassets in Resources */,
 				35C8EA5421A2DAFB00B0E604 /* icons12的副本.png in Resources */,
 				35C8E9F021A291CC00B0E604 /* Main.storyboard in Resources */,
+				35B13C6A21F03AD400A2D101 /* icon_29x29.png in Resources */,
 				35C8EA5321A2DAFB00B0E604 /* icons09的副本.png in Resources */,
+				35B13C6921F03AD400A2D101 /* icon_152x152.png in Resources */,
 				35D91BBE21E71556000505A4 /* background5.mp3 in Resources */,
 				35D91BC221E7185A000505A4 /* background6.mp3 in Resources */,
 				35825B0F21B2B1CA00FCCFAD /* blank的副本.png in Resources */,
+				35B13C7021F03AD400A2D101 /* icon_40x40.png in Resources */,
 				35C8EA5A21A2DAFB00B0E604 /* backdrop3的副本.jpg in Resources */,
 				35C8EA5B21A2DAFB00B0E604 /* backdrop2的副本.jpg in Resources */,
 				35C8EA6021A2DAFB00B0E604 /* icons10的副本.png in Resources */,
+				35B13C6D21F03AD400A2D101 /* icon_60x60.png in Resources */,
 				187D06BC21E8511100193A20 /* background1.mp3 in Resources */,
 				35C8EA6321A2DAFB00B0E604 /* icons03的副本.png in Resources */,
 				35C8EA5721A2DAFB00B0E604 /* icons11的副本.png in Resources */,
